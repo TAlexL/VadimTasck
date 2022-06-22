@@ -4,50 +4,100 @@ import org.testng.annotations.Test;
 public class TestsOfHeadersSite extends TestInit{
 
     @Test
-    public void aboutUsIBISCompanyTest(){
-        HeaderOfSiteElements he = new HeaderOfSiteElements(driver);
-        driver.get(he.site);
-        he.getAboutUsDropDown().click();
-        he.getAboutUsDropDownIBISCompany().click();
-
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.shop/ua/"));
-    }
-    @Test
     public void aboutUsBrendsCatalogTest(){
-        HeaderOfSiteElements he = new HeaderOfSiteElements(driver);
-        driver.get(he.site);
-        he.getAboutUsDropDown().click();
-        he.getAboutUsDropDownBrendsCatalog().click();
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getAboutUsDropDown().click();
+        elementsOfSiteHeader.getAboutUsBrendsCatalog().click();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.shop/ua/categories_brands/"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/categories_brands/"));
     }
     @Test
     public void aboutUsIbisShopsTest(){
-        HeaderOfSiteElements he = new HeaderOfSiteElements(driver);
-        driver.get(he.site);
-        he.getAboutUsDropDown().click();
-        he.getAboutUsIbisShops().click();
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getAboutUsDropDown().click();
+        elementsOfSiteHeader.getAboutUsIbisShops().click();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.shop/ua/shops/"));
-    }
-    @Test
-    public void customerServiceGiftCertificateTest(){
-        HeaderOfSiteElements he = new HeaderOfSiteElements(driver);
-        driver.get(he.site);
-        he.getCustomerServiceDropDown().click();
-        he.getGiftCertificate().click();
-
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.shop/ua/gift-certificate/"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/shops/"));
     }
 
     @Test
-    public void customerServiceFAQTest(){
-        HeaderOfSiteElements he = new HeaderOfSiteElements(driver);
-        driver.get(he.site);
-        he.getCustomerServiceDropDown().click();
-        he.getFAQ().click();
+    public void aboutUsWorldOfHobbiesMagazineTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getAboutUsDropDown().click();
+        elementsOfSiteHeader.getWorldOfHobbiesMagazine().click();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.shop/ua/faq_page/"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://gunmag.com.ua/"));
     }
 
+    @Test
+    public void aboutUsKitchenHouseTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getAboutUsDropDown().click();
+        elementsOfSiteHeader.getKitchenHouse().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://kuldom.ua/"));
+    }
+
+    @Test
+    public void forClientsDiscountOfferTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getDiscountOffer().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/programma-lojalynosti/"));
+    }
+
+    @Test
+    public void forClientsGiftCertificateTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getGiftCertificate().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/gift-certificate/"));
+    }
+
+    @Test
+    public void forClientsWarrantyTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getWarranty().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/garantijnye-objazatelstva/"));
+    }
+    @Test
+    public void forClientsTermsOfPurchaseTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getTermsOfPurchase().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/uslovyia-pryobrytenyia-oruzhyia/"));
+    }
+
+    @Test
+    public void forClientsDeliveryAndPaymentTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getDeliveryAndPayment().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/dostavka-i-oplata/"));
+    }
+
+    @Test
+    public void forClientsActionTest(){
+        ElementsOfSiteHeader elementsOfSiteHeader = new ElementsOfSiteHeader(driver);
+        driver.get(elementsOfSiteHeader.site);
+        elementsOfSiteHeader.getForClientDropDown().click();
+        elementsOfSiteHeader.getAction().click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("https://ibis.net.ua/ua/posts/akcii/"));
+    }
 }
