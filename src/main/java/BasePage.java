@@ -5,5 +5,7 @@ public class BasePage {
 
     public WebDriver driver;
 
-    BasePage(WebDriver driver){this.driver = driver;}
+    BasePage(WebDriver driver){
+        this.driver = driver;
+    }
 }

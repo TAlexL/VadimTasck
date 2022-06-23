@@ -1,6 +1,6 @@
-package PackageOne;
+package PlusMinusMethods;
 
-public class ClassOnePlusMinus {
+public class PlusMinus {
     public int plusMethod(int a, int b){
         return a+b;
     }

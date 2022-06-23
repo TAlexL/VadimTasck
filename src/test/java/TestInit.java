@@ -21,5 +21,4 @@ public class TestInit {
     public void afterMethod(){
         driver.quit();
     }
-
 }
