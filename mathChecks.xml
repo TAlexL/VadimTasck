@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "VadimsTasckChecks">
+
+    <test name = "mathTest">
+        <classes>
+            <class name = "AreaCircleAndVolumeSphereTests.TestsAreaCircleAndVolumeSphere" />
+            <class name = "AreaVolumeOfSquareTests.TestsAreaVolumeOfSquare" />
+            <class name = "MultiplicationDivisionTests.TestForMultiplicationDivision" />
+            <class name = "PerimeterSquareRectangleTests.TestsForPerimeterSquareRectangle" />
+            <class name = "PlusMinusTests.TestsForPlusMinus" />
+        </classes>
+    </test>
+
+</suite>
