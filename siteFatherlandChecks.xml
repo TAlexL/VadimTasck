@@ -3,7 +3,7 @@
 
 <suite name = "VadimsTasckChecks">
 
-        <test name = "siteIbisTest">
+        <test name = "siteBUTTest">
             <classes>
                 <class name = "TestsOfHeadersSite" />
             </classes>
